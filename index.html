@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+  <title>在线问答系统-首页</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/style/common.css">
+  <link rel="stylesheet" href="./assets/style/index.css">
+  <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+  <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+  <!--[if lt IE 9]>
+      <script src="./assets/plugins/html5shiv.min.js"></script>
+      <script src="./assets/plugins/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="layout" name="top">
+  <!-- 顶部导航条 -->
+  <div class="layout-header navbar-fixed-top">
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">在线问答系统</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">首页 <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">话题</a></li>
+          </ul>
+          <form class="navbar-form navbar-left">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="搜索话题">
+            </div>
+            <button type="submit" class="btn btn-default">搜索</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">提问</a></li>
+            <li><a href="#">消息<span class="badge">4</span></a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                aria-expanded="false">个人中心 <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">我的主页</a></li>
+                <li><a href="#">设置</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">退出登录</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  </div>
+  <!-- // 顶部导航 -->
+  <div class="layout-main">
+    <div class="container">
+      <div class="row">
+        <!-- 左边内容区 -->
+        <div class="col-md-9">
+          <!-- falsh消息 -->
+          <div class="alert alert-warning alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+            <strong>你好，齐嘉诚，</strong> 欢迎登陆在线问答系统。
+          </div>
+          <!-- //falsh消息 -->
+          <!-- 轮播图 -->
+          <div id="id-index-banner" class="carousel slide" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="./assets/home/banner/banner1.jpg" alt="首页轮播图">
+              </div>
+              <div class="item">
+                <img src="./assets/home/banner/banner1.jpg" alt="首页轮播图">
+              </div>
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#id-index-banner" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#id-index-banner" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <!--// 轮播图 -->
+          <!-- 分类菜单 -->
+          <div class="cls-menu-ls">
+            <a href="#" class="active">推荐</a>
+            <a href="#">关注</a>
+            <a href="#">热榜</a>
+          </div>
+          <!-- //分类菜单 -->
+          <!-- 问题列表 -->
+          <div class="qa-ls">
+            <div class="qa-item">
+              <a href="#" class="title">
+                教育强国：为伟大复兴铸魂育人
+              </a>
+              <div class="desc">
+                <div class="left">
+                  <img class="img-responsive" src="./assets/home/qa/left.jpg" alt="">
+                </div>
+                <div class="right">
+                  <p class="show-desc">
+                    党的十八大以来，习近平总书记围绕“培养社会主义建设者和接班人”作出一系列重要论述，深刻回答了培养什么人、怎样培养人、为谁培养人这一根本问题，深刻揭示了教育的本质规律与价值目标，鲜明反映出党和国家对教育事业的时代要求与历史定位。
+                    <span class="more">阅读原文<i class="glyphicon glyphicon-chevron-down"></i></span>
+                  </p>
+                  <p class="show-all hidden">
+                    党的十八大以来，坚持教育为人民服务，为中国共产党治国理政服务，为巩固和发展中国特色社会主义制度服务，为改革开放和社会主义现代化建设服务，把立德树人作为教育的根本任务，《新时代爱国主义教育实施纲要》等相继推出，“我和我的祖国”快闪、高校师生拉歌接力等活动，让爱国主义热情更加迸发；学校思政课的思想性、理论性和亲和力、针对性不断提升，全国所有高校、所有专业推进课程思政建设；成立国家教材委员会，负责统筹和指导全国教材工作，确保教材建设正确方向，发挥培根铸魂、启智增慧作用；加强和改进新时代学校体育美育，将“劳”纳入教育方针，推动学生德智体美劳全面发展……。
+                    <span class="more">收起原文<i class="glyphicon glyphicon-chevron-up"></i></span>
+                  </p>
+                </div>
+              </div>
+              <div class="qa-footer">
+                <div>
+                  <button class="btn btn-info btn-sm"><i class="glyphicon glyphicon-thumbs-up"></i>
+                    赞同1024
+                  </button>
+                </div>
+                <div>
+                  <button class="btn btn-info btn-sm"><i class="glyphicon glyphicon-thumbs-down"></i>
+                  </button>
+                </div>
+                <div class="txt-menu">
+                  <i class="glyphicon glyphicon-comment"></i>1024评论
+                </div>
+                <div class="txt-menu">
+                  <i class="glyphicon glyphicon-send"></i>分享
+                </div>
+                <div class="txt-menu">
+                  <i class="glyphicon glyphicon-heart"></i>收藏
+                </div>
+                <div class="txt-menu">
+                  <i class="glyphicon glyphicon-flag"></i>举报
+                </div>
+                <div class="txt-menu btn-group" role="group">
+                  <i type="button" class="glyphicon glyphicon-option-horizontal dropdown-toggle" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                  </i>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">不感兴趣</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="qa-ls">
+            <div class="qa-item">
+              <a href="#" class="title">
+                教育强国：为伟大复兴铸魂育人
+              </a>
+              <div class="desc">
+                <div class="left">
+                  <img class="img-responsive" src="./assets/home/qa/left.jpg" alt="">
+                </div>
+                <div class="right">
+                  <p class="show-desc">
+                    党的十八大以来，习近平总书记围绕“培养社会主义建设者和接班人”作出一系列重要论述，深刻回答了培养什么人、怎样培养人、为谁培养人这一根本问题，深刻揭示了教育的本质规律与价值目标，鲜明反映出党和国家对教育事业的时代要求与历史定位。
+                    <span class="more">阅读原文<i class="glyphicon glyphicon-chevron-down"></i></span>
+                  </p>
+                  <p class="show-all hidden">
+                    党的十八大以来，坚持教育为人民服务，为中国共产党治国理政服务，为巩固和发展中国特色社会主义制度服务，为改革开放和社会主义现代化建设服务，把立德树人作为教育的根本任务，《新时代爱国主义教育实施纲要》等相继推出，“我和我的祖国”快闪、高校师生拉歌接力等活动，让爱国主义热情更加迸发；学校思政课的思想性、理论性和亲和力、针对性不断提升，全国所有高校、所有专业推进课程思政建设；成立国家教材委员会，负责统筹和指导全国教材工作，确保教材建设正确方向，发挥培根铸魂、启智增慧作用；加强和改进新时代学校体育美育，将“劳”纳入教育方针，推动学生德智体美劳全面发展……。
+                    <span class="more">收起原文<i class="glyphicon glyphicon-chevron-up"></i></span>
+                  </p>
+                </div>
+              </div>
+              <div class="qa-footer">
+                <div>
+                  <button class="btn btn-info btn-sm"><i class="glyphicon glyphicon-thumbs-up"></i>
+                    赞同1024
+                  </button>
+                </div>
+                <div>
+                  <button class="btn btn-info btn-sm"><i class="glyphicon glyphicon-thumbs-down"></i>
+                  </button>
+                </div>
+                <div class="txt-menu">
+                  <i class="glyphicon glyphicon-comment"></i>1024评论
+                </div>
+                <div class="txt-menu">
+                  <i class="glyphicon glyphicon-send"></i>分享
+                </div>
+                <div class="txt-menu">
+                  <i class="glyphicon glyphicon-heart"></i>收藏
+                </div>
+                <div class="txt-menu">
+                  <i class="glyphicon glyphicon-flag"></i>举报
+                </div>
+                <div class="txt-menu btn-group" role="group">
+                  <i type="button" class="glyphicon glyphicon-option-horizontal dropdown-toggle" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                  </i>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">不感兴趣</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="qa-ls">
+            <div class="qa-item">
+              <a href="#" class="title">
+                教育强国：为伟大复兴铸魂育人
+              </a>
+              <div class="desc">
+                <div class="left">
+                  <img class="img-responsive" src="./assets/home/qa/left.jpg" alt="">
+                </div>
+                <div class="right">
+                  <p class="show-desc">
+                    党的十八大以来，习近平总书记围绕“培养社会主义建设者和接班人”作出一系列重要论述，深刻回答了培养什么人、怎样培养人、为谁培养人这一根本问题，深刻揭示了教育的本质规律与价值目标，鲜明反映出党和国家对教育事业的时代要求与历史定位。
+                    <span class="more">阅读原文<i class="glyphicon glyphicon-chevron-down"></i></span>
+                  </p>
+                  <p class="show-all hidden">
+                    党的十八大以来，坚持教育为人民服务，为中国共产党治国理政服务，为巩固和发展中国特色社会主义制度服务，为改革开放和社会主义现代化建设服务，把立德树人作为教育的根本任务，《新时代爱国主义教育实施纲要》等相继推出，“我和我的祖国”快闪、高校师生拉歌接力等活动，让爱国主义热情更加迸发；学校思政课的思想性、理论性和亲和力、针对性不断提升，全国所有高校、所有专业推进课程思政建设；成立国家教材委员会，负责统筹和指导全国教材工作，确保教材建设正确方向，发挥培根铸魂、启智增慧作用；加强和改进新时代学校体育美育，将“劳”纳入教育方针，推动学生德智体美劳全面发展……。
+                    <span class="more">收起原文<i class="glyphicon glyphicon-chevron-up"></i></span>
+                  </p>
+                </div>
+              </div>
+              <div class="qa-footer">
+                <div>
+                  <button class="btn btn-info btn-sm"><i class="glyphicon glyphicon-thumbs-up"></i>
+                    赞同1024
+                  </button>
+                </div>
+                <div>
+                  <button class="btn btn-info btn-sm"><i class="glyphicon glyphicon-thumbs-down"></i>
+                  </button>
+                </div>
+                <div class="txt-menu">
+                  <i class="glyphicon glyphicon-comment"></i>1024评论
+                </div>
+                <div class="txt-menu">
+                  <i class="glyphicon glyphicon-send"></i>分享
+                </div>
+                <div class="txt-menu">
+                  <i class="glyphicon glyphicon-heart"></i>收藏
+                </div>
+                <div class="txt-menu">
+                  <i class="glyphicon glyphicon-flag"></i>举报
+                </div>
+                <div class="txt-menu btn-group" role="group">
+                  <i type="button" class="glyphicon glyphicon-option-horizontal dropdown-toggle" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                  </i>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">不感兴趣</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="qa-ls">
+            <div class="qa-item">
+              <a href="#" class="title">
+                教育强国：为伟大复兴铸魂育人
+              </a>
+              <div class="desc">
+                <div class="left">
+                  <img class="img-responsive" src="./assets/home/qa/left.jpg" alt="">
+                </div>
+                <div class="right">
+                  <p class="show-desc">
+                    党的十八大以来，习近平总书记围绕“培养社会主义建设者和接班人”作出一系列重要论述，深刻回答了培养什么人、怎样培养人、为谁培养人这一根本问题，深刻揭示了教育的本质规律与价值目标，鲜明反映出党和国家对教育事业的时代要求与历史定位。
+                    <span class="more">阅读原文<i class="glyphicon glyphicon-chevron-down"></i></span>
+                  </p>
+                  <p class="show-all hidden">
+                    党的十八大以来，坚持教育为人民服务，为中国共产党治国理政服务，为巩固和发展中国特色社会主义制度服务，为改革开放和社会主义现代化建设服务，把立德树人作为教育的根本任务，《新时代爱国主义教育实施纲要》等相继推出，“我和我的祖国”快闪、高校师生拉歌接力等活动，让爱国主义热情更加迸发；学校思政课的思想性、理论性和亲和力、针对性不断提升，全国所有高校、所有专业推进课程思政建设；成立国家教材委员会，负责统筹和指导全国教材工作，确保教材建设正确方向，发挥培根铸魂、启智增慧作用；加强和改进新时代学校体育美育，将“劳”纳入教育方针，推动学生德智体美劳全面发展……。
+                    <span class="more">收起原文<i class="glyphicon glyphicon-chevron-up"></i></span>
+                  </p>
+                </div>
+              </div>
+              <div class="qa-footer">
+                <div>
+                  <button class="btn btn-info btn-sm"><i class="glyphicon glyphicon-thumbs-up"></i>
+                    赞同1024
+                  </button>
+                </div>
+                <div>
+                  <button class="btn btn-info btn-sm"><i class="glyphicon glyphicon-thumbs-down"></i>
+                  </button>
+                </div>
+                <div class="txt-menu">
+                  <i class="glyphicon glyphicon-comment"></i>1024评论
+                </div>
+                <div class="txt-menu">
+                  <i class="glyphicon glyphicon-send"></i>分享
+                </div>
+                <div class="txt-menu">
+                  <i class="glyphicon glyphicon-heart"></i>收藏
+                </div>
+                <div class="txt-menu">
+                  <i class="glyphicon glyphicon-flag"></i>举报
+                </div>
+                <div class="txt-menu btn-group" role="group">
+                  <i type="button" class="glyphicon glyphicon-option-horizontal dropdown-toggle" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                  </i>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">不感兴趣</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="qa-ls">
+            <div class="qa-item">
+              <a href="#" class="title">
+                教育强国：为伟大复兴铸魂育人
+              </a>
+              <div class="desc">
+                <div class="left">
+                  <img class="img-responsive" src="./assets/home/qa/left.jpg" alt="">
+                </div>
+                <div class="right">
+                  <p class="show-desc">
+                    党的十八大以来，习近平总书记围绕“培养社会主义建设者和接班人”作出一系列重要论述，深刻回答了培养什么人、怎样培养人、为谁培养人这一根本问题，深刻揭示了教育的本质规律与价值目标，鲜明反映出党和国家对教育事业的时代要求与历史定位。
+                    <span class="more">阅读原文<i class="glyphicon glyphicon-chevron-down"></i></span>
+                  </p>
+                  <p class="show-all hidden">
+                    党的十八大以来，坚持教育为人民服务，为中国共产党治国理政服务，为巩固和发展中国特色社会主义制度服务，为改革开放和社会主义现代化建设服务，把立德树人作为教育的根本任务，《新时代爱国主义教育实施纲要》等相继推出，“我和我的祖国”快闪、高校师生拉歌接力等活动，让爱国主义热情更加迸发；学校思政课的思想性、理论性和亲和力、针对性不断提升，全国所有高校、所有专业推进课程思政建设；成立国家教材委员会，负责统筹和指导全国教材工作，确保教材建设正确方向，发挥培根铸魂、启智增慧作用；加强和改进新时代学校体育美育，将“劳”纳入教育方针，推动学生德智体美劳全面发展……。
+                    <span class="more">收起原文<i class="glyphicon glyphicon-chevron-up"></i></span>
+                  </p>
+                </div>
+              </div>
+              <div class="qa-footer">
+                <div>
+                  <button class="btn btn-info btn-sm"><i class="glyphicon glyphicon-thumbs-up"></i>
+                    赞同1024
+                  </button>
+                </div>
+                <div>
+                  <button class="btn btn-info btn-sm"><i class="glyphicon glyphicon-thumbs-down"></i>
+                  </button>
+                </div>
+                <div class="txt-menu">
+                  <i class="glyphicon glyphicon-comment"></i>1024评论
+                </div>
+                <div class="txt-menu">
+                  <i class="glyphicon glyphicon-send"></i>分享
+                </div>
+                <div class="txt-menu">
+                  <i class="glyphicon glyphicon-heart"></i>收藏
+                </div>
+                <div class="txt-menu">
+                  <i class="glyphicon glyphicon-flag"></i>举报
+                </div>
+                <div class="txt-menu btn-group" role="group">
+                  <i type="button" class="glyphicon glyphicon-option-horizontal dropdown-toggle" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                  </i>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">不感兴趣</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- //问题列表 -->
+
+        <!-- 右侧快捷菜单区域 -->
+        <div class="col-md-3">
+          <!-- 右侧菜单 -->
+          <!-- 菜单1 -->
+          <div class="right-menu-box">
+            <a class="menu-item" href="#">
+              <i class="glyphicon glyphicon-plus"></i>
+              <span>写回答</span>
+            </a>
+            <a class="menu-item" href="#">
+              <i class="glyphicon glyphicon-pencil"></i>
+              <span>写文章</span>
+            </a>
+            <a class="menu-item" href="#">
+              <i class="glyphicon glyphicon-ok"></i>
+              <span>写想法</span>
+            </a>
+            <a class="menu-item" href="#">
+              <i class="glyphicon glyphicon-play-circle"></i>
+              <span>发视频</span>
+            </a>
+            <a class="menu-item" href="#">
+              <i class="glyphicon glyphicon-adjust"></i>
+              <span>稍后答</span>
+            </a>
+            <a class="menu-item" href="#">
+              <i class="glyphicon glyphicon-file"></i>
+              <span>草稿箱</span>
+            </a>
+          </div>
+          <!-- //菜单1 -->
+          <!-- 创作者入口 -->
+          <div class="right-cerater-box">
+            <a href="#">
+              <div class="left">
+                <i class="glyphicon glyphicon-user"></i>
+                <span>草稿箱</span>
+              </div>
+              <div class="right">
+                <span>去开通</span>
+                <i class="glyphicon glyphicon-chevron-right"></i>
+              </div>
+            </a>
+          </div>
+          <!-- //创作者入口 -->
+          <!-- 菜单2 -->
+          <div class="right-menu-two-box">
+            <a class="menu-item" href="#">
+              <i class="glyphicon glyphicon-plus"></i>
+              <span>Live</span>
+            </a>
+            <a class="menu-item" href="#">
+              <i class="glyphicon glyphicon-pencil"></i>
+              <span>书店</span>
+            </a>
+            <a class="menu-item" href="#">
+              <i class="glyphicon glyphicon-ok"></i>
+              <span>圆桌</span>
+            </a>
+            <a class="menu-item" href="#">
+              <i class="glyphicon glyphicon-play-circle"></i>
+              <span>专栏</span>
+            </a>
+            <a class="menu-item" href="#">
+              <i class="glyphicon glyphicon-adjust"></i>
+              <span>付费咨询</span>
+            </a>
+            <a class="menu-item" href="#">
+              <i class="glyphicon glyphicon-file"></i>
+              <span>百科</span>
+            </a>
+          </div>
+          <!-- //菜单2 -->
+          <!-- //菜单3 -->
+          <div class="right-menu-three-box">
+            <a class="menu-item" href="#">
+              <i class="glyphicon glyphicon-heart"></i>
+              <span>我的收藏</span>
+              <span class="badge">4</span>
+            </a>
+            <a class="menu-item" href="#">
+              <i class="glyphicon glyphicon-question-sign"></i>
+              <span>我关注的问题</span>
+              <span class="badge">4</span>
+            </a>
+            <a class="menu-item" href="#">
+              <i class="glyphicon glyphicon-user"></i>
+              <span>我的邀请</span>
+              <span class="badge">4</span>
+            </a>
+            <a class="menu-item" href="#">
+              <i class="glyphicon glyphicon-yen"></i>
+              <span>我的余额</span>
+            </a>
+            <a class="menu-item" href="#">
+              <i class="glyphicon glyphicon-king"></i>
+              <span>站务中心</span>
+            </a>
+            <a class="menu-item" href="#">
+              <i class="glyphicon glyphicon-file"></i>
+              <span>版本服务中心</span>
+            </a>
+          </div>
+          <!-- //菜单3 -->
+          <!-- 声明 -->
+          <div class="right-state-box">
+            <span>用户指南.用户使用协议.用户隐私政策侵权举报.网上有害信息举报专区</span>
+          </div>
+          <!-- //声明 -->
+          <!-- //右侧菜单 -->
+        </div>
+        <!-- //右侧快捷菜单区域 -->
+      </div>
+    </div>
+  </div>
+  <!-- 页面右下角菜单（意见反馈，返回顶部） -->
+  <div class="layout-footer">
+    <a href="#" data-toggle="tooltip" data-placement="top" title="意见反馈"><i class="glyphicon glyphicon-briefcase"></i></a>
+    <a href="#top" data-toggle="tooltip" data-placement="top" title="回到顶部"><i class="glyphicon glyphicon-circle-arrow-up"></i></a>
+  </div>
+
+  <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+  <script src="./assets/plugins/jquery-3.4.1.min.js"></script>
+  <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+  <script src="./assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+      $('.show-desc').click(function () {
+        $(this).addClass('hidden')
+        $(this).next().removeClass('hidden')
+      })
+      $('.show-all').click(function () {
+        $(this).addClass('hidden')
+        $(this).prev().removeClass('hidden')
+      })
+    })
+  </script>
+</body>
+
+</html>
