@@ -1,0 +1,66 @@
+/* 标题 */
+.login-header .title{
+    color: #0084ff;
+}
+
+.login-header .slogan{
+    padding-bottom: 20px;
+}
+
+/* 表单 */
+.login-from {
+    padding: 30px;
+
+}
+
+.login-from .control-label{
+    padding-right: 0;
+}
+
+.login-from .desc{
+    background-color: #f6f6f6;
+    padding: 10px;
+    color: gray;
+    margin-top: 10px;
+}
+
+/* 社交账号登录 */
+.login-social {
+    display: flex;
+    margin-top: 20px;
+    padding: 15px 20px;
+    font-size: 15px;
+    justify-content: space-between;
+}
+
+.login-social .iconfont{
+    font-size: 18px;
+}
+
+.login-social .icon-wechat{
+    color: #45c454;
+}
+
+.login-social .icon-qq{
+    color: #4cafe9;
+}
+
+.login-social .icon-weibo{
+    color: #d81e06;
+}
+
+.login-social .right span {
+    padding: 0 10px;
+}
+
+/* 关于我们 */
+.login-footer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.login-footer a {
+    text-decoration: none;
+    color: grey;
+    padding: 10px;
+}
