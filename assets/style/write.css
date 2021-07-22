@@ -1,0 +1,31 @@
+.layout{
+    padding-top: 70px;
+}
+
+
+.write-form {
+    background-color: #fff;
+    padding: 30px;
+}
+
+.write-form .upload-file{
+    height: 150px;
+    background-color: #f6f6f6;
+    width: 100%;
+    position: relative;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.write-form .upload-file input{
+    display: none;
+}
+
+.write-form .glyphicon{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: #8590a6;
+    transform: translate(-50%,-50%);
+    font-size: 32px;
+}
